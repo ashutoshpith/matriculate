@@ -1,0 +1,24 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.box {
+  text-align: center;
+  border: 2px dotted rebeccapurple;
+  width: 400px;
+  height: 309px;
+  float: left;
+}
+.lang {
+  color: brown;
+}
+
+.boxPython {
+  float:right;
+  text-align: center;
+  border: 2px dotted rebeccapurple;
+  width: 400px;
+  height: 309px;
+}
+.java-read {
+  text-decoration: none;
+}

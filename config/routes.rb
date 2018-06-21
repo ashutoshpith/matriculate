@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'javacat/start' , to: "javacat#start"
   get 'java/read'
   get 'java/practice'
   get 'java/challenge'

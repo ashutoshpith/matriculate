@@ -5,7 +5,7 @@ class JavaController < ApplicationController
   def practice
   end
 
-  def challenge
+  def challange
   end
 
   def progress

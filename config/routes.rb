@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  
+  get 'java_pracs/string'
+  get 'java_pracs/loop'
+  get 'java_pracs/function'
   get 'javacat/start' 
   get 'java/read'
   get 'java/practice'

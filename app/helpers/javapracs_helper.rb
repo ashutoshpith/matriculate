@@ -1,0 +1,2 @@
+module JavapracsHelper
+end

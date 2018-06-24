@@ -12,15 +12,10 @@
 
 ActiveRecord::Schema.define(version: 2018_06_23_135747) do
 
-  create_table "java_pracs", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
-    t.text "ques"
-    t.text "ans"
-    t.integer "point"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
-  create_table "javapracs", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
+  create_table "javapracs", force: :cascade do |t|
     t.text "ques"
     t.text "ans"
     t.integer "point"

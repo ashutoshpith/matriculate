@@ -8,7 +8,10 @@
       <th>Ques</th>
       <th>Ans</th>
       <th>Point</th>
-      <th colspan="3"></th>
+      <th>Input</th>
+      <th>Output</th>
+      
+      <th colspan="5"></th>
     </tr>
   </thead>
 
@@ -18,6 +21,9 @@
         <td><%= jp.ques %></td>
         <td><%= jp.ans %></td>
         <td><%= jp.point %></td>
+        <td><%= jp.input %></td>
+        <td><%= jp.output %></td>
+        
         <td><%= link_to 'Show', jp %></td>
         <td><%= link_to 'Edit', edit_jp_path(jp) %></td>
         <td><%= link_to 'Destroy', jp, method: :delete, data: { confirm: 'Are you sure?' } %></td>

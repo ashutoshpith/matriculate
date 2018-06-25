@@ -69,6 +69,6 @@ class JpsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def jp_params
-      params.require(:jp).permit(:ques, :ans, :point)
+      params.require(:jp).permit(:ques, :ans, :point, :input, :output)
     end
 end

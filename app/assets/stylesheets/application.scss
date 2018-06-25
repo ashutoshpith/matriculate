@@ -3,9 +3,13 @@
  *= require_self
  
   */
+  
  .nav {
-   border: 3.5px dotted violet;
+   margin-top: 3px;
+   border: 3.5px double violet;
    text-align: center;
+   padding: 20px;
+   background: crimson;
  }
  body {
    margin: 0;

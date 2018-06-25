@@ -10,17 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_23_135747) do
+ActiveRecord::Schema.define(version: 2018_06_25_081349) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
-  create_table "javapracs", force: :cascade do |t|
+  create_table "jps", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.text "ques"
     t.text "ans"
     t.integer "point"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "input"
+    t.text "output"
   end
 
 end

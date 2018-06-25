@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class JavapracTest < ActiveSupport::TestCase
+class JpTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

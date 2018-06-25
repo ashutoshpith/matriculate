@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ques:</strong>
+  <%= @jp.ques %>
+</p>
+
+<p>
+  <strong>Ans:</strong>
+  <%= @jp.ans %>
+</p>
+
+<p>
+  <strong>Point:</strong>
+  <%= @jp.point %>
+</p>
+
+<%= link_to 'Edit', edit_jp_path(@jp) %> |
+<%= link_to 'Back', jps_path %>
+

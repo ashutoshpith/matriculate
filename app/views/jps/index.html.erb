@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Jps</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ques</th>
+      <th>Ans</th>
+      <th>Point</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @jps.each do |jp| %>
+      <tr>
+        <td><%= jp.ques %></td>
+        <td><%= jp.ans %></td>
+        <td><%= jp.point %></td>
+        <td><%= link_to 'Show', jp %></td>
+        <td><%= link_to 'Edit', edit_jp_path(jp) %></td>
+        <td><%= link_to 'Destroy', jp, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Jp', new_jp_path %>

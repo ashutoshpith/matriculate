@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
   
-  get 'javapracs/strings'
-  get 'javapracs/loops'
-  get 'javapracs/functions'
   
+  resources :jps
   get 'javacat/start' 
   get 'java/read'
   get 'java/practice'

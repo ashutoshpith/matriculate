@@ -1,2 +1,0 @@
-class Javaprac < ApplicationRecord
-end

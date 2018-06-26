@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+<div class="centred">
+<h1 >Java Looping</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ques</th>
+      <th>Ans</th>
+      <th>Point</th>
+      <th>Input</th>
+      <th>Output</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @jls.each do |jl| %>
+      <tr>
+        <td><%= jl.ques %></td>
+        <td><%= jl.ans %></td>
+        <td><%= jl.point %></td>
+        <td><%= jl.input %></td>
+        <td><%= jl.output %></td>
+        <td><%= link_to 'Show', jl %></td>
+        <td><%= link_to 'Edit', edit_jl_path(jl) %></td>
+        <td><%= link_to 'Destroy', jl, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<br>
+<ul>
+<strong>
+<li>
+<%= link_to 'New Jl', new_jl_path %>
+</li><li>
+<%= link_to  "Back", java_practice_path %>
+</li>
+</strong>
+</ul>

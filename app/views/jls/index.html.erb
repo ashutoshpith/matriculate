@@ -1,27 +1,26 @@
 <p id="notice"><%= notice %></p>
 <div class="centred">
 <h1 >Java Looping</h1>
-
-<table>
+<div class="loop-topic"> 
+<table >
   <thead>
-    <tr>
-      <th>Ques</th>
-      <th>Ans</th>
+    <tr >
+      <th >Heading</th>
+      
       <th>Point</th>
-      <th>Input</th>
-      <th>Output</th>
-      <th colspan="3"></th>
+      
+      <th colspan="2"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @jls.each do |jl| %>
       <tr>
-        <td><%= jl.ques %></td>
-        <td><%= jl.ans %></td>
+        <td><%= jl.heading %></td>
+        
         <td><%= jl.point %></td>
-        <td><%= jl.input %></td>
-        <td><%= jl.output %></td>
+        
+       
         <td><%= link_to 'Show', jl %></td>
         <td><%= link_to 'Edit', edit_jl_path(jl) %></td>
         <td><%= link_to 'Destroy', jl, method: :delete, data: { confirm: 'Are you sure?' } %></td>

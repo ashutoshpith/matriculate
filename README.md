@@ -1,25 +1,26 @@
-# README
+"# matriculate" 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby version 2.4.4
 
-Things you may want to cover:
+* System dependencies basic
 
-* Ruby version
+* Configuration rails 5.2 
 
-* System dependencies
-
-* Configuration
-
-* Database creation
+* Database creation -mysql2 with database name "mat"
 
 * Database initialization
-
-* How to run the test suite
+    -adapter=mysql2 
+    -username=root
+    -password=root
+    -port=9876
+* How to run 
+- cmd line instruction "rails s" to start 
+server
+- rails routes to check path
+- rails db:migrate for database for migration
 
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
 
 * ...
-"# matriculate" 

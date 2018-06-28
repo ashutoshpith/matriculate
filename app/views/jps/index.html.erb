@@ -5,11 +5,13 @@
 <table>
   <thead>
     <tr>
-      <th>Ques</th>
-      <th>Ans</th>
+      <th>Question Number:</th>
+
+      <th>Heading</th>
+     
       <th>Point</th>
-      <th>Input</th>
-      <th>Output</th>
+      <th>Created At</th>
+      <th>Updated At</th>
       
       <th colspan="5"></th>
     </tr>
@@ -18,13 +20,17 @@
   <tbody>
     <% @jps.each do |jp| %>
       <tr>
-        <td><%= jp.ques %></td>
-        <td><%= jp.ans %></td>
-        <td><%= jp.point %></td>
-        <td><%= jp.input %></td>
-        <td><%= jp.output %></td>
+        <td><%= jp.id %></td>
         
-        <td><%= link_to 'Show', jp %></td>
+        <td><%= jp.heading %></td>
+        
+        <td><%= jp.point %></td>
+        <td><%= jp.created_at %></td>
+        <td><%= jp.updated_at %></td>
+
+       
+        
+        <td><%= link_to 'Click To Shot', jp %></td>
         <td><%= link_to 'Edit', edit_jp_path(jp) %></td>
         <td><%= link_to 'Destroy', jp, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>

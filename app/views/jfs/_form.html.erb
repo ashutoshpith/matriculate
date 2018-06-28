@@ -1,5 +1,5 @@
 
-<%= simple_form_for(@jp) do |f| %>
+<%= simple_form_for(@jf) do |f| %>
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
@@ -10,7 +10,6 @@
     <%= f.input :point %>
     <%= f.input :input %>
     <%= f.input :output %>
-    
   </div>
 
   <div class="form-actions">

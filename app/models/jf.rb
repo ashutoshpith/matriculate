@@ -1,0 +1,2 @@
+class Jf < ApplicationRecord
+end

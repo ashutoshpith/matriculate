@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_26_152847) do
+ActiveRecord::Schema.define(version: 2018_06_28_175245) do
+
+  create_table "jfs", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
+    t.text "heading"
+    t.text "ques"
+    t.text "ans"
+    t.integer "point"
+    t.text "input"
+    t.text "output"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "jls", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.text "ques"
@@ -31,6 +42,7 @@ ActiveRecord::Schema.define(version: 2018_06_26_152847) do
     t.datetime "updated_at", null: false
     t.text "input"
     t.text "output"
+    t.text "heading"
   end
 
   create_table "models", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|

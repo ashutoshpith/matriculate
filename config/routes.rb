@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   
   
 
+  resources :jfs
   resources :rbs
   resources :jls
   resources :jps

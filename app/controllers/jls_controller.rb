@@ -69,6 +69,6 @@ class JlsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def jl_params
-      params.require(:jl).permit(:ques, :ans, :point, :input, :output, :heading)
+      params.require(:jl).permit(:ques, :ans, :point, :input, :output, :heading, :id)
     end
 end

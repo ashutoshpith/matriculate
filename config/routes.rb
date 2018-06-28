@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   
   
+  
+
+  resources :rbs
   resources :jls
   resources :jps
   get 'javacat/start' 

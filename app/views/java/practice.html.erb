@@ -1,18 +1,46 @@
-<h1 class="prac-head">
+<h1 class="prac-head bg-info">
 Practice Areana
 </h1>
-<h3>
-Question Centre
-</h3>
 
-<div class="java-string">
-<%= link_to  "String",  jps_path %>
+
+  <!---->
+  <div class="container">
+  <div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-title">Java String</h2>
+        <p class="card-text">String is a sequence of characters. But in java, string is an object that represents a sequence of characters. The java.lang.String class is used to create string object.</p>
+        <%= link_to  "Show", jps_path ,class: "btn btn-lg btn-warning" %>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-title">Java Loop</h2>
+        <p class="card-text">The Java for loop is used to iterate a part of the program several times. If the number of iteration is fixed, it is recommended to use for loop.</p>
+       <%= link_to  "Show", jls_path, class: "btn btn-lg btn-warning" %>
+      </div>
+    </div>
+  </div>
+   <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-title">Java Methods</h2>
+        <p class="card-text">TTA Java method is a collection of statements that are grouped together to perform an operation. When you call the System.out.println() method, for example, the system actually executes several statements in order to display a message on the console.</p>
+      <%= link_to  "Show", jfs_path, class: "btn btn-lg btn-warning" %>
+      </div>
+    </div>
+  </div>
+   <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-title">Java OOP's</h2>
+        <p class="card-text">The Java for loop is used to iterate a part of the program several times. If the number of iteration is fixed, it is recommended to use for loop.</p>
+       <%= link_to  "Show", jls_path, class: "btn btn-lg btn-warning" %>
+      </div>
+    </div>
+  </div>
 </div>
-
-<div class="java-loop">
-<%= link_to  "Loop's", jls_path %>
-</div>
-
-<div class="java-function">
-<%= link_to  "Function", jfs_path %>
 </div>

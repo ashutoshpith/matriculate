@@ -1,6 +1,6 @@
 "# matriculate" 
 
-* Ruby version 2.4.4
+* Ruby version 2.5.1
 
 * System dependencies basic
 

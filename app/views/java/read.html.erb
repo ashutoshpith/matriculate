@@ -1,7 +1,193 @@
-<div class="main">
-<h1>
-Java The Beginner Way's</h1>
-</div>
+ <hr>
+ <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-8 blog-main">
+          <h3 class="pb-3 mb-4 font-italic border-bottom">
+          Java 
+          </h3>
 
-<%= render  "readSidepan" , class: "read-sidepan"%>
-<%= render  "readCentre" %>
+          <div class="blog-post">
+            <h2 class="blog-post-title">What is Java</h2>
+            <p class="blog-post-meta">January 1, 2014 by <a href="#">Amxdp18</a></p>
+
+            <p>Java is a programming language and a platform.
+
+      Java is a high level, robust, secured and object-oriented programming language.
+
+      Platform: Any hardware or software environment in which a program runs, is known as a platform. Since Java has its own runtime environment (JRE) and API, it is called platform.</p>
+            <hr>
+            <p>Example-
+                class Simple{  
+        public static void main(String args[]){  
+         System.out.println("Hello Java");  
+        }  
+    }  </p>
+            <blockquote>
+              <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            </blockquote>
+            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+            <h2> Where it is used</h2>
+            <p>According to Sun, 3 billion devices run java. There are many devices where Java is currently used. Some of them are as follows:
+    1.Desktop Applications such as acrobat reader, media player, antivirus etc.<br>
+    2.Web Applications such as irctc.co.in, javatpoint.com etc.<br>
+    3.Enterprise Applications such as banking applications.<br>
+    4.Mobile<br>
+    5.Embedded System<br>
+    6.Smart Card<br>
+    7.Robotics<br>
+    8.Games etc.<br>
+</p>
+            <h3>Example</h3>
+            <p>Let's have a quick look at java programming example. A detailed description of hello Java example is given in next page.</p>
+            <pre><code>    class Simple{  
+        public static void main(String args[]){  
+         System.out.println("Hello Java");  
+        }  
+    }  </code></pre>
+        
+            <h3>Features of Java</h3>
+            <p>The main objective of Java programming language creation was to make it portable, simple and secure programming language. Apart from this, there are also some awesome features which play important role in the popularity of this language. The features of Java are also known as java buzzwords.</p>
+            <ul>
+             
+    <li>Simple</li>
+    <li>Object-Oriented</li>
+    <li>Portable</li>
+    <li>Platform independent</li>
+    <li>Secured</li>
+    <li>Robust</li>
+    <li>Architecture neutral</li>
+    <li>Interpreted</li>
+    <li>High Performance</li>
+    <li>Multithreaded</li>
+    <li>Distributed</li>
+    <li>Dynamic</li>
+
+            </ul>
+            <h3>Platform Independent</h3>
+            <p>Java is platform independent because it is different from other languages like C, C++ etc. which are compiled into platform specific machines while Java is a write once, run anywhere language. A platform is the hardware or software environment in which a program runs.
+
+There are two types of platforms software-based and hardware-based. Java provides software-based platform.
+The Java platform differs from most other platforms in the sense that it is a software-based platform that runs on the top of other hardware-based platforms. It has two components: </p>
+            <ol>
+              <li>Runtime Environment</li>
+              <li>API(Application Programming Interface)</li>
+             
+            </ol>
+            <p>Java code can be run on multiple platforms e.g. Windows, Linux, Sun Solaris, Mac/OS etc. Java code is compiled by the compiler and converted into bytecode. This bytecode is a platform-independent code because it can be run on multiple platforms i.e. Write Once and Run Anywhere(WORA).</p>
+          </div><!-- /.blog-post -->
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Simple Program of Java</h2>
+            <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
+            <pre><code>class Simple{  
+        public static void main(String args[]){  
+         System.out.println("Hello Java");  
+        }  
+    }  
+            </code></pre>
+
+            <p>save this file as Simple.java
+To compile:	javac Simple.java
+To execute:	java Simple</p>
+<pre>
+<code>
+Output:Hello Java
+</code>
+</pre>
+            <blockquote>
+             <h3>Parameters used in first java program</h3>  
+    <ol>
+    <li><strong>class</strong> keyword is used to declare a class in java.</li>
+   <li><strong> public </strong>keyword is an access modifier which represents visibility, it means it is visible to all.</li>
+   <li> <strong>static</strong> is a keyword, if we declare any method as static, it is known as static method. The core advantage of static method is that there is no need to create object to invoke the static method. The main method is executed by the JVM, so it doesn't require to create object to invoke the main method. So it saves memory.</li>
+   <li> <strong>void</strong> is the return type of the method, it means it doesn't return any value.</li>
+   <li> <strong>main</strong> represents the starting point of the program.
+    String[] args is used for command line argument. We will learn it later.</li>
+    <li><strong>System.out.println()</strong> is used print statement. We will learn about the internal working of System.out.println statement later.</li>
+</ol>
+          </div><!-- /.blog-post -->
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Java Variables</h2>
+            <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
+
+            <p>A variable is a container which holds the value while the java program is executed. A variable is assigned with a datatype.
+
+Variable is a name of memory location. There are three types of variables in java: local, instance and static.
+
+There are two types of data types in java: primitive and non-primitive.</p>
+            
+           <pre>
+           <code>     class A{  
+                    int data=50;//instance variable  
+                    static int m=100;//static variable  
+                      void method(){  
+                           int n=90;//local variable  
+                                   }  
+                   }//end of class  
+           </code>
+           </pre>
+
+
+
+
+
+           
+          </div><!-- /.blog-post -->
+
+
+
+
+
+          <nav class="blog-pagination">
+            <a class="btn btn-outline-primary" href="#">Older</a>
+            <a class="btn btn-outline-secondary " href="#">Newer</a>
+          </nav>
+
+        </div><!-- /.blog-main -->
+
+        <aside class="col-md-4 blog-sidebar">
+          <div class="p-3 mb-3 bg-light rounded">
+            <h4 class="font-italic">Adventise</h4>
+            <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+          </div>
+
+          <div class="p-3">
+            <h4 class="font-italic">Archives</h4>
+            <ol class="list-unstyled mb-0">
+              <li><a href="#">March 2014</a></li>
+              <li><a href="#">February 2014</a></li>
+              <li><a href="#">January 2014</a></li>
+              <li><a href="#">December 2013</a></li>
+              <li><a href="#">November 2013</a></li>
+              <li><a href="#">October 2013</a></li>
+              <li><a href="#">September 2013</a></li>
+              <li><a href="#">August 2013</a></li>
+              <li><a href="#">July 2013</a></li>
+              <li><a href="#">June 2013</a></li>
+              <li><a href="#">May 2013</a></li>
+              <li><a href="#">April 2013</a></li>
+            </ol>
+          </div>
+
+          <div class="p-3">
+            <h4 class="font-italic">Elsewhere</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ol>
+          </div>
+        </aside><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </main><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>Blog template built for <a href="https://getbootstrap.com/">Matriculate</a> by <a href="https://twitter.com/mdo">amxdp18</a>.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+   

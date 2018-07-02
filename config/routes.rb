@@ -3,8 +3,10 @@ Rails.application.routes.draw do
   
   
 
+  namespace :chems do
+    get 'ionics/index'
+  end
   resources :jfs
-  resources :rbs
   resources :jls
   resources :jps
   get 'javacat/start' 

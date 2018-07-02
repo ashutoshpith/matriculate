@@ -45,48 +45,4 @@ ActiveRecord::Schema.define(version: 2018_06_28_175245) do
     t.text "heading"
   end
 
-  create_table "models", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
-    t.integer "series"
-    t.text "name"
-    t.decimal "battery", precision: 10
-    t.decimal "wire", precision: 10
-    t.decimal "misc", precision: 10
-    t.decimal "avail", precision: 10
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "rbs", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
-    t.text "mb"
-    t.text "ms"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "repairs", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
-    t.decimal "cust", precision: 10
-    t.decimal "model", precision: 10
-    t.decimal "val", precision: 10
-    t.timestamp "due"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "series", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
-    t.text "name"
-    t.decimal "avail", precision: 10
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "tras", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
-    t.decimal "repair", precision: 10
-    t.timestamp "got"
-    t.timestamp "sol"
-    t.timestamp "send"
-    t.timestamp "rec"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
 end

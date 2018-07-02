@@ -1,5 +1,16 @@
 <p id="notice"><%= notice %></p>
+<div class="container">
 
+<div class="row">
+    <div class="col-md">
+     <%= link_to  "Back To Java Practice Arena", java_practice_path, class: "btn btn-outline-info" %>
+    </div>
+    <div class="col-xl">
+     <%= link_to 'Create New Content', new_jp_path, class: "btn btn-outline-info" %>
+    </div>
+
+  </div>
+</div>
 
 <div class="container centre">
 <h1>Java Practice Arena</h1>
@@ -41,8 +52,3 @@
 </table>
 </div>
 <br>
-<strong class="centre">
-<%= link_to 'Create New Content', new_jp_path, class: "btn btn-outline-info" %>
-<br>
-<br>
-<%= link_to  "Back To Java Practice Arena", java_practice_path, class: "btn btn-outline-info" %></strong>

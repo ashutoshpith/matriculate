@@ -3,12 +3,14 @@ Rails.application.routes.draw do
   
   
 
+  namespace :java do
+    resources :jps
+  end
   namespace :chems do
     get 'ionics/index'
   end
-  resources :jfs
   resources :jls
-  resources :jps
+  
   get 'javacat/start' 
   get 'java/read'
   get 'java/practice'

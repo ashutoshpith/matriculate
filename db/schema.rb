@@ -10,15 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_28_175245) do
+ActiveRecord::Schema.define(version: 2018_07_02_152115) do
 
-  create_table "jfs", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
+  create_table "java_jps", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.text "heading"
     t.text "ques"
     t.text "ans"
-    t.integer "point"
     t.text "input"
     t.text "output"
+    t.integer "point"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -31,17 +31,6 @@ ActiveRecord::Schema.define(version: 2018_06_28_175245) do
     t.text "output"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.text "heading"
-  end
-
-  create_table "jps", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
-    t.text "ques"
-    t.text "ans"
-    t.integer "point"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.text "input"
-    t.text "output"
     t.text "heading"
   end
 

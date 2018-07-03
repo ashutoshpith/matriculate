@@ -1,2 +1,0 @@
-class Jf < ApplicationRecord
-end

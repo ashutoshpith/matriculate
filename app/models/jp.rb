@@ -1,2 +1,0 @@
-class Jp < ApplicationRecord
-end

@@ -1,2 +1,0 @@
-module JpsHelper
-end

@@ -1,5 +1,5 @@
-<p id="notice"><%= notice %></p>
-
+<p id="notice" class="alert"><%= notice %></p>
+<div class="container">
 <p>
   <strong>Heading:</strong>
   <%= @java_jp.heading %>
@@ -12,23 +12,28 @@
 
 <p>
   <strong>Ans:</strong>
-  <%= @java_jp.ans %>
+  <pre><code><%= @java_jp.ans %></code></pre>
 </p>
 
 <p>
   <strong>Input:</strong>
+  <pre><code>
   <%= @java_jp.input %>
+</code></pre>
 </p>
 
 <p>
-  <strong>Output:</strong>
-  <%= @java_jp.output %>
+  <strong>Output:</strong><pre><code>
+  <%= @java_jp.output %></code></pre>
 </p>
 
 <p>
   <strong>Point:</strong>
   <%= @java_jp.point %>
 </p>
+<%= link_to 'Edit', edit_java_jp_path(@java_jp), class: "btn btn-outline-warning" %> |
+<%= link_to 'Back', java_jps_path, class: "btn btn-outline-success" %>
+</div>
 
-<%= link_to 'Edit', edit_java_jp_path(@java_jp) %> |
-<%= link_to 'Back', java_jps_path %>
+<br>
+<br>

@@ -1,37 +1,36 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Java Jps</h1>
+<h1 class="container">Java Practice Areana</h1>
+<br>
+<table class="table pos">
 
-<table>
-  <thead>
+  <thead class="text-info">
     <tr>
       <th>Heading</th>
-      <th>Ques</th>
-      <th>Ans</th>
-      <th>Input</th>
-      <th>Output</th>
+      <th>Question</th>
       <th>Point</th>
-      <th colspan="3"></th>
+      <th colspan="5"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @java_jps.each do |java_jp| %>
       <tr>
-        <td><%= java_jp.heading %></td>
-        <td><%= java_jp.ques %></td>
-        <td><%= java_jp.ans %></td>
-        <td><%= java_jp.input %></td>
-        <td><%= java_jp.output %></td>
-        <td><%= java_jp.point %></td>
-        <td><%= link_to 'Show', java_jp %></td>
-        <td><%= link_to 'Edit', edit_java_jp_path(java_jp) %></td>
-        <td><%= link_to 'Destroy', java_jp, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="text-success font-weight-bold text-capitalize"><%= java_jp.heading %></td>
+        <td class="text-success font-weight-bold text-capitalize"><%= java_jp.ques %></td>
+        <td class="text-danger font-weight-bold"><%= java_jp.point %></td>
+        <td><%= link_to 'Show', java_jp, class: "btn btn-outline-info" %></td>
+        <td><%= link_to 'Edit', edit_java_jp_path(java_jp), class: "btn btn-outline-warning" %></td>
+        <td><%= link_to 'Destroy', java_jp, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger" %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
+<hr class="pos">
 <br>
-
-<%= link_to 'New Java Jp', new_java_jp_path %>
+<div class="container">
+<%= link_to 'Create Content', new_java_jp_path, class: "btn btn-outline-primary" %>
+<%= link_to  "Back To Java", javacat_start_path, class: "btn btn-outline-success" %></div>
+<br>
+<br>

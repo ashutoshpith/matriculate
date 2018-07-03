@@ -128,11 +128,464 @@ There are two types of data types in java: primitive and non-primitive.</p>
            </code>
            </pre>
 
+ <h1>Java Keywords </h1>
+ <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Keyword</th>
+        <th>Description</th>
+        <th>Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>abstract</td>
+        <td>an abstract class
+or method</td>
+        <td>abstract class Writable {
+public abstract void
+write(Writer out);
+public void save(String
+filename) { ... }
+}</td>
+      </tr>
+      <tr>
+        <td>assert</td>
+        <td>with assertions
+enabled, throws
+an error if condition
+not fulfilled</td>
+        <td>assert param != null;
+Note: Run with -ea to enable
+assertions</td>
+      </tr>
+      <tr>
+        <td>boolean</td>
+        <td>the Boolean type
+with values true
+and false</td>
+        <td>boolean more = false;</td>
+      </tr>
+      <tr>
+        <td>break</td>
+        <td>breaks out of a
+switch or loop</td>
+        <td>while ((ch = in.next()) !=
+-1) {
+if (ch == '\n') break;
+process(ch);
+}
+Note: Also see switch</td>
+      </tr>
+      <tr>
+        <td>byte</td>
+        <td>the 8-bit integer
+type</td>
+        <td>byte b = -1; // Not the
+same as 0xFF
+Note: Be careful with bytes < 0</td>
+      </tr>
+      <tr>
+        <td>case</td>
+        <td>a case of a switch</td>
+        <td>see switch</td>
+      </tr>
+      <tr>
+        <td>catch</td>
+        <td>the clause of a try
+block catching an
+exception</td>
+        <td>see try</td>
+      </tr>
+      <tr>
+        <td>char</td>
+        <td>the Unicode
+character type</td>
+        <td>char input = 'Q';</td>
+      </tr>
+      <tr>
+        <td>class</td>
+        <td>defines a class
+type</td>
+        <td>class Person {
+private String name;
+public Person(String
+aName) {
+name = aName;
+}
+public void print() {
+System.out.
+println(name);
+}
+}</td>
+      </tr>
+      <tr>
+        <td>continue</td>
+        <td>continues at the
+end of a loop</td>
+        <td>while ((ch = in.next()) !=
+-1) {
+if (ch == ' ') continue;
+process(ch);
+}</td>
+      </tr>
+      <tr>
+        <td>default</td>
+        <td>1) the default
+clause of a switch</td>
+        <td>see switch</td>
+      </tr>
+      <tr>
+        <td>default
+(cont.)</td>
+        <td>2) denotes default
+implementation
+of an interface
+method</td>
+        <td>public interface
+Collection<E> {
+@Override
+default Spliterator<E>
+spliterator() {
+return Spliterators.
+spliterator(this, 0);
+}
+}</td>
+      </tr>
+      <tr>
+        <td>do</td>
+        <td>the top of a do/
+while loop</td>
+        <td>do {
+ch = in.next();
+} while (ch == ' ');</td>
+      </tr>
+      <tr>
+        <td>double</td>
+        <td>the doubleprecision
+floatingnumber
+type</td>
+        <td>double oneHalf = 0.5;</td>
+      </tr>
+      <tr>
+        <td>else</td>
+        <td>the else clause of
+an if statement</td>
+        <td>see if</td>
+      </tr>
+      <tr>
+        <td>enum</td>
+        <td>an enumerated type</td>
+        <td>enum Mood { SAD, HAPPY };</td>
+      </tr>
 
+      <tr>
 
+   <td> for</td>
+<td>a loop type</td>
+<td>for (int i = 10; i >= 0; i--)
+System.out.println(i);
+for (String s : line.split("\\s+"))
+System.out.println(s);
+Note: In the “generalized” for loop, the expression after the : must be an array or an Iterable
+    </td>  </tr>
 
+      <tr>
+<td>if</td>
+<td>a conditional statement</td>
+<td>if (input == 'Q')
+System.exit(0);
+else
+more = true;
+     </td> </tr>
+      <tr>
+<td>
+implements</td>
+<td>defines the interface(s) that a class implements</td>
+<td>class Student
+implements Printable {
+...
+}</td>
+      </tr>
+      <tr>
+<td>
+import</td>
+<td>imports a package</td>
+<td>import java.util.ArrayList;
+import com.dzone.refcardz.*;
+    </td>  </tr>
+ <tr>
+ <td>
+instanceof</td>
+<td>tests if an object is an instance of a class</td>
+<td>if (fred instanceof Student)
+value = ((Student) fred).getId();
+Note: null instanceof T is always false
+    </td>  </tr>
+      <tr>
+<td>
+int</td>
+<td>the 32-bit integer type</td>
+<td>int value = 0;
+    </td>  </tr>
+      <tr>
+<td>
+interface</td>
+<td>an abstract type with methods that a class can implement</td>
+<td>interface Printable {
+void print();
+}</td>
+      </tr>
+      <tr>
+<td>
+long</td>
+<td>the 64-bit long integer type</td>
+<td>long worldPopulation = 6710044745L;
+    </td>  </tr>
+      <tr>
+<td>
+native</td>
+<td>a method implemented by the host system
+    </td>  </tr>
+      <tr>
+<td>new</td>
+<td>allocates a new object or array</td>
+<td>Person fred = new Person("Fred");
+    </td>  </tr>
+      <tr>
+<td>
+null</td>
+<td>a null reference</td>
+<td>Person optional = null;
+     </td> </tr>
+      <tr>
+<td>
+package</td>
+<td>a package of classes</td>
+<td>package com.dzone.refcardz;
+    </td>  </tr>
+      <tr>
+<td>
+private</td>
+<td>a feature that is
+accessible only by
+methods of this class</td>
+<td>see class</td>
+      </tr>
+      <tr>
+<td>
+protected</td>
+<td>a feature that is accessible only by methods of this class, its children, and other classes in the same package</td>
+<td>class Student {
+protected int id;
+...
+}</td>
+      </tr>
+      <tr>
+<td>
+public</td>
+<td>a feature that is accessible by methods of all classes</td>
+<td>see class</td>
+      </tr>
+      <tr>
+<td>
+return</td>
+<td>returns from a method</td>
+<td>int getId() { return id; }
+    </td>  </tr>
+      <tr>
+<td>
+short</td>
+<td>the 16-bit integer type</td>
+<td>short skirtLength = 24;
+    </td>  </tr>
+      <tr>
+<td>
+static</td>
+<td>a feature that is unique to its class, not to objects of its class</td>
+<td>public class WriteUtil {
+public static void write(Writable[] ws,
+String filename);
+public static final String DEFAULT_EXT = ".dat";
+     </td> </tr>
+
+<tr>
+<td>
+strictfp
+</td>
+<td>
+Use strict rules for floating-point computations
+</td></tr>
+<tr>
+<td>
+super</td>
+<td>invoke a superclass constructor or method
+</td>
+<td>public Student(String name, int anId) {
+super(name); id = anId;
+}
+public void print() {
+super.print();
+System.out.println(id);
+}</td>
+</tr>
+<tr>
+<td>
+switch</td>
+<td>a selection statement</td>
+<td>switch (ch) {
+case 'Q':
+case 'q':
+more = false; break;
+case ' ';
+break;
+default:
+process(ch); break;
+}
+Note: If you omit a break, processing continues with the next case.
+</td></tr>
+<tr>
+<td>
+synchronized</td>
+<td>a method or code block that is atomic to a thread</td>
+<td>public synchronized void addGrade(String gr) {
+grades.add(gr);
+}</td>
+</tr>
+<tr>
+<td>
+this</td>
+<td>the implicit argument of a method, or a constructor of this class</td>
+<td>public Student(String id) {this.id = id;}
+public Student() { this(""); }
+</td></tr>
+<tr>
+<td>throw</td>
+<td>throws an exception</td>
+<td>if (param == null)
+throw new IllegalArgumentException();
+</td></tr>
+<tr>
+<td>throws</td>
+<td>the exceptions that a method can throw</td>
+<td>public void print()
+throws PrinterException, IOException
+</td></tr>
+<tr>
+<td>transient</td>
+<td>marks data that should not be persistent</td>
+<td>class Student {
+private transient Data cachedData;
+...
+}</td>
+</tr>
+<tr>
+<td>
+try</td>
+<td>a block of code that traps exceptions</td>
+<td>try {
+try {
+fred.print(out);
+} catch (PrinterException ex) {
+ex.printStackTrace();
+}
+} finally {
+out.close();
+}</td>
+</tr>
+<tr>
+<td>void</td>
+<td>denotes a method that returns no value</td>
+<td>public void print() { ... }</td>
+</tr>
+<tr>
+<td>
+volatile</td>
+<td>ensures that a field is coherently accessed by multiple threads</td>
+<td>class Student {
+private volatile int nextId;
+...
+}</td>
+</tr>
+<tr>
+<td>
+while</td>
+<td>a loop</td>
+<td>while (in.hasNext())
+process(in.next());</td>
+</tr>
+    </tbody>
+  </table>
+
+<h1>Primitive Type</h1>
+   <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Size</th>
+        <th>Range</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <td> int</td>
+      <td>4 bytes</td>
+      <td>–2,147,483,648 to 2,147,483, 647
+(just over 2 billion)</td>
+<td>The wrapper type is Integer. Use BigInteger for arbitrary precision integers</td></tr>
+<tr>
+<td>short</td>
+<td>2 bytes</td>
+<td>–32,768 to 32,767</td>
+</tr>
+<tr>
+ <td>long </td>
+ <td>8 bytes </td>
+ <td>–9,223,372,036,854,775,808 to
+9,223,372,036,854,775,807 </td>
+ <td>Literals end with L (e.g. 1L) </td>
+</tr>
+<tr> <td>
+byte </td>
+ <td>1 byte
+–128 to 127 </td>
+ <td>Note that the range is not 0 to 255
+  </td></tr>
+<tr>
+ <td>
+float </td>
+ <td>4 bytes </td>
+ <td>approximately
+±3.40282347E+38F (6–7
+significant decimal digits) </td>
+ <td>Literals end with F (e.g. 0.5F) </td></tr>
+<tr>
+ <td>
+double </td>
+ <td>8 bytes </td>
+ <td>approximately
+±1.79769313486231570E+308
+(15 significant decimal digits) </td>
+ <td>Use BigDecimal for arbitrary precision floating-point numbers </td>
+</tr>
+<tr>
+ <td>char </td>
+ <td>2 bytes </td>
+ <td>\u0000 to \uFFFF </td>
+ <td>The wrapper type is Character. Unicode characters > U+FFFF require two char values</td>
+ </tr>
+ <tr>
+ <td>
+boolean</td><td>
+true or false </td> 
+      </tr>
+    </tbody>
+  </table>
 
            
+
+
           </div><!-- /.blog-post -->
 
 

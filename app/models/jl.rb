@@ -1,2 +1,0 @@
-class Jl < ApplicationRecord
-end

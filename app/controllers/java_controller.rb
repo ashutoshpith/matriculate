@@ -4,7 +4,11 @@ class JavaController < ApplicationController
 
   def index
   end
-
+ 
+  def progress
+    
+  end
+  
  
 
  

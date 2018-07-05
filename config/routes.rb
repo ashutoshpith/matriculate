@@ -4,7 +4,11 @@ Rails.application.routes.draw do
   
 
   namespace :java do
+    get 'article/index'
+  end
+  namespace :java do
     resources :jps
+    
   end
   namespace :chems do
     get 'ionics/index'

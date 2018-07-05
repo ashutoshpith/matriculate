@@ -6,9 +6,8 @@ class JavaController < ApplicationController
   end
  
   def progress
-    
-  end
-  
+   
+  end 
  
 
  

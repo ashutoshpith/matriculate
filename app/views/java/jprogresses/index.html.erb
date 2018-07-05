@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Java Jprogresses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Heading</th>
+      <th>Ques</th>
+      <th>Ans</th>
+      <th>Point</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @java_jprogresses.each do |java_jprogress| %>
+      <tr>
+        <td><%= java_jprogress.heading %></td>
+        <td><%= java_jprogress.ques %></td>
+        <td><%= java_jprogress.ans %></td>
+        <td><%= java_jprogress.point %></td>
+        <td><%= link_to 'Show', java_jprogress %></td>
+        <td><%= link_to 'Edit', edit_java_jprogress_path(java_jprogress) %></td>
+        <td><%= link_to 'Destroy', java_jprogress, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Java Jprogress', new_java_jprogress_path %>

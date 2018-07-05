@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   
 
   namespace :java do
+    resources :jprogresses
+  end
+  namespace :java do
     get 'article/index'
   end
   namespace :java do

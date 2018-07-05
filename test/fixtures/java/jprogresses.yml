@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  heading: MyText
+  ques: MyText
+  ans: MyText
+  point: 1
+
+two:
+  heading: MyText
+  ques: MyText
+  ans: MyText
+  point: 1

@@ -69,6 +69,6 @@ class Java::JpsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def java_jp_params
-      params.require(:java_jp).permit(:heading, :ques, :ans, :input, :output, :point)
+      params.require(:java_jp).permit(:heading, :ques, :ans, :input, :output, :point, :editor)
     end
 end

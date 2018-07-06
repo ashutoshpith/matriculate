@@ -6,8 +6,8 @@
           <strong>Java</strong> 
           </h1>
 
-          <div class="blog-post">
-            <h2 class="blog-post-title">What is Java</h2>
+          <div class="blog-post alert alert-dark">
+            <h2 class="blog-post-title alert alert-warning">What is Java</h2>
             <p class="blog-post-meta">June 30, 2018 by <a href="#">Amxdp18</a></p>
 
             <p>Java is a programming language and a platform.
@@ -16,17 +16,12 @@
 
       Platform: Any hardware or software environment in which a program runs, is known as a platform. Since Java has its own runtime environment (JRE) and API, it is called platform.</p>
             <hr>
-            <p>Example-
-                class Simple{  
-        public static void main(String args[]){  
-         System.out.println("Hello Java");  
-        }  
-    }  </p>
+            
             <blockquote>
               <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
             </blockquote>
             <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-            <h2> Where it is used</h2>
+            <h2 class="alert alert-warning"> Where it is used</h2>
             <p>According to Sun, 3 billion devices run java. There are many devices where Java is currently used. Some of them are as follows:
     1.Desktop Applications such as acrobat reader, media player, antivirus etc.<br>
     2.Web Applications such as irctc.co.in, javatpoint.com etc.<br>
@@ -37,15 +32,15 @@
     7.Robotics<br>
     8.Games etc.<br>
 </p>
-            <h3>Example</h3>
+            <h3 class="alert alert-warning">Example</h3>
             <p>Let's have a quick look at java programming example. A detailed description of hello Java example is given in next page.</p>
-            <pre><code>    class Simple{  
+            <pre class="alert alert-primary"><code>    class Simple{  
         public static void main(String args[]){  
          System.out.println("Hello Java");  
         }  
     }  </code></pre>
         
-            <h3>Features of Java</h3>
+            <h3 class="alert alert-warning">Features of Java</h3>
             <p>The main objective of Java programming language creation was to make it portable, simple and secure programming language. Apart from this, there are also some awesome features which play important role in the popularity of this language. The features of Java are also known as java buzzwords.</p>
             <ul>
              
@@ -63,7 +58,7 @@
     <li>Dynamic</li>
 
             </ul>
-            <h3>Platform Independent</h3>
+            <h3 class="alert alert-warning">Platform Independent</h3>
             <p>Java is platform independent because it is different from other languages like C, C++ etc. which are compiled into platform specific machines while Java is a write once, run anywhere language. A platform is the hardware or software environment in which a program runs.
 
 There are two types of platforms software-based and hardware-based. Java provides software-based platform.
@@ -76,10 +71,10 @@ The Java platform differs from most other platforms in the sense that it is a so
             <p>Java code can be run on multiple platforms e.g. Windows, Linux, Sun Solaris, Mac/OS etc. Java code is compiled by the compiler and converted into bytecode. This bytecode is a platform-independent code because it can be run on multiple platforms i.e. Write Once and Run Anywhere(WORA).</p>
           </div><!-- /.blog-post -->
 
-          <div class="blog-post">
-            <h2 class="blog-post-title">Simple Program of Java</h2>
+          <div class="blog-post alert alert-dark">
+            <h2 class="blog-post-title alert alert-primary">Simple Program of Java</h2>
             <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
-            <pre><code>class Simple{  
+            <pre class="alert alert-primary"><code>class Simple{  
         public static void main(String args[]){  
          System.out.println("Hello Java");  
         }  
@@ -95,7 +90,7 @@ Output:Hello Java
 </code>
 </pre>
             <blockquote>
-             <h3>Parameters used in first java program</h3>  
+             <h3 class="alert alert-primary">Parameters used in first java program</h3>  
     <ol>
     <li><strong>class</strong> keyword is used to declare a class in java.</li>
    <li><strong> public </strong>keyword is an access modifier which represents visibility, it means it is visible to all.</li>
@@ -107,8 +102,8 @@ Output:Hello Java
 </ol>
           </div><!-- /.blog-post -->
 
-          <div class="blog-post">
-            <h2 class="blog-post-title">Java Variables</h2>
+          <div class="blog-post alert alert-dark">
+            <h2 class="blog-post-title alert alert-warning">Java Variables</h2>
             <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
 
             <p>A variable is a container which holds the value while the java program is executed. A variable is assigned with a datatype.
@@ -117,7 +112,7 @@ Variable is a name of memory location. There are three types of variables in jav
 
 There are two types of data types in java: primitive and non-primitive.</p>
             
-           <pre>
+           <pre class="alert alert-primary">
            <code>class A{  
                     int data=50;//instance variable  
                     static int m=100;//static variable  
@@ -128,7 +123,7 @@ There are two types of data types in java: primitive and non-primitive.</p>
            </code>
            </pre>
 
- <h1>Java Keywords </h1>
+ <h1 class="alert alert-warning">Java Keywords </h1>
  <table class="table table-striped">
     <thead>
       <tr>
@@ -518,7 +513,7 @@ process(in.next());
  <!--end of Keyword cat-->
 
 <hr>
-<h1>Primitive Type</h1>
+<h1 class="alert alert-warning">Primitive Type</h1>
    <table class="table table-striped">
     <thead>
       <tr>
@@ -584,9 +579,28 @@ boolean</td>
     </tbody>
   </table>
 
-  
+<h1 class="alert alert-warning">LAMBDA EXPRESSIONS</h1>
 
+<h3 class="badge badge-pill badge-success">FUNCTIONAL INTERFACES</h3>
+Interfaces with a single abstract method. Example:
 
+<pre class="alert alert-primary"><code>@FunctionalInterface
+public interface Predicate<T> {
+boolean test(T t);
+}</code></pre>
+Implementations of this interface can be supplied in-line as a
+lambda expression:
+<ul>
+<li>• Anonymous implementations of functional interfaces</li>
+<li>• Parameters and body are separated by an arrow sign ("->")</li>
+<li>• Parameters of the abstract method are on the left of the arrow</li>
+<li>• The implementation is on the right of the arrow</li>
+</ul>
+  <h3 class="alert alert-warning">Typical usage of lambda expressions:</h3>
+<pre class="alert alert-primary"><code>JButton button = new JButton("MyButton");
+button.addActionListener(event ->
+doSomeImportantStuff(event));
+</code></pre>
           </div><!-- /.blog-post -->
 
 

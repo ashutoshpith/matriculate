@@ -59,7 +59,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'jquery-rails'
 gem 'simple_form', '~> 4.0', '>= 4.0.1'
-gem 'mysql2', '~> 0.5.1'
 gem 'materialize-sass', '~> 1.0.0.rc2'
 gem 'material_icons' 
 gem 'bootstrap', '~> 4.1.1'
+gem 'pg', '>= 0.18', '< 2.0'

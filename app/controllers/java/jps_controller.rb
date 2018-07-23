@@ -10,6 +10,7 @@ class Java::JpsController < ApplicationController
   # GET /java/jps/1
   # GET /java/jps/1.json
   def show
+
   end
 
   # GET /java/jps/new
@@ -19,29 +20,42 @@ class Java::JpsController < ApplicationController
 
   # GET /java/jps/1/edit
   def edit
+
   end
 
   # POST /java/jps
   # POST /java/jps.json
   def create
     @java_jp = Java::Jp.new(java_jp_params)
+    @java_jprogress = Java::Jprogress.new(java_jprogress_params)
+
 
     respond_to do |format|
       if @java_jp.save
-        format.html { redirect_to @java_jp, notice: 'Jp was successfully created.' }
-        format.json { render :show, status: :created, location: @java_jp }
+        #format.html { redirect_to @java_jp, notice: 'Jp was successfully created.' }
+        
       else
         format.html { render :new }
         format.json { render json: @java_jp.errors, status: :unprocessable_entity }
       end
     end
-  end
+      
+    end
+  
 
   # PATCH/PUT /java/jps/1
   # PATCH/PUT /java/jps/1.json
-  def update
+  def update   
+     @java_jprogress = Java::Jprogress.new(java_jprogress_params)
+
     respond_to do |format|
       if @java_jp.update(java_jp_params)
+        if @java_jprogress.save
+          format.html { redirect_to @java_jprogress, notice: 'Jprogress was successfully created.' }
+          format.json { render :show, status: :ok, location: @java_jprogress }
+        else
+          format.json { render json: @java_jprogress.errors, status: :unprocessable_entity }
+        end  
         format.html { redirect_to @java_jp, notice: 'Jp was successfully updated.' }
         format.json { render :show, status: :ok, location: @java_jp }
       else
@@ -70,5 +84,13 @@ class Java::JpsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def java_jp_params
       params.require(:java_jp).permit(:heading, :ques, :ans, :input, :output, :point, :editor)
+    end
+
+    def set_java_jprogress
+      @java_jprogress = Java::Jprogress.find(params[:id])
+    end
+
+    def java_jprogress_params
+      params.require(:java_jprogress).permit(:heading, :ques, :ans, :point, :input, :output)
     end
 end

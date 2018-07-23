@@ -69,6 +69,6 @@ class Java::JprogressesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def java_jprogress_params
-      params.require(:java_jprogress).permit(:heading, :ques, :ans, :point)
+      params.require(:java_jprogress).permit(:heading, :ques, :ans, :point, :input, :output)
     end
 end

@@ -10,18 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_05_165749) do
+ActiveRecord::Schema.define(version: 2018_07_23_203720) do
 
-  create_table "java_jprogresses", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "java_jprogresses", force: :cascade do |t|
     t.text "heading"
     t.text "ques"
     t.text "ans"
     t.integer "point"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "input"
+    t.text "output"
   end
 
-  create_table "java_jps", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
+  create_table "java_jps", force: :cascade do |t|
     t.text "heading"
     t.text "ques"
     t.text "ans"

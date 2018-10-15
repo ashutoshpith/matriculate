@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   
   
 
+  devise_for :users
   resources :javaques
   namespace :java do
     resources :jprogresses

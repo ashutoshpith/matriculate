@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Heading:</strong>
+  <%= @javaque.heading %>
+</p>
+
+<p>
+  <strong>Question:</strong>
+  <%= @javaque.question %>
+</p>
+
+<p>
+  <strong>Answer:</strong>
+  <%= @javaque.answer %>
+</p>
+
+<p>
+  <strong>Input:</strong>
+  <%= @javaque.input %>
+</p>
+
+<p>
+  <strong>Output:</strong>
+  <%= @javaque.output %>
+</p>
+
+<p>
+  <strong>Point:</strong>
+  <%= @javaque.point %>
+</p>
+
+<%= link_to 'Edit', edit_javaque_path(@javaque) %> |
+<%= link_to 'Back', javaques_path %>

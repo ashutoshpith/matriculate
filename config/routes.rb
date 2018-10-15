@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   
   
 
+  resources :javaques
   namespace :java do
     resources :jprogresses
   end

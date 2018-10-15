@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  heading: MyString
+  question: MyString
+  answer: MyString
+  input: MyString
+  output: MyString
+  point: 1
+
+two:
+  heading: MyString
+  question: MyString
+  answer: MyString
+  input: MyString
+  output: MyString
+  point: 1

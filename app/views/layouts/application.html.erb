@@ -8,11 +8,11 @@
     <%= stylesheet_link_tag    "application" %>
     
     <%= csrf_meta_tags %>
+    <%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %>
   </head>
 
   <body>
 <%= render  "layouts/navbar" %>
-
     <%= yield :sidebar %>
 
     <%= yield %>
